@@ -1,0 +1,27 @@
+<div *ngIf="localWeather" class="weather-card">
+
+    <h2>{{localWeather.name}}</h2>
+
+    <div class="main-container">
+
+        <div class="vertical-container">
+            
+            <div class="inner-container">
+                <img [src]="localWeather.weather[0].icon" alt="weather icon">
+                <p class="weather-main">{{localWeather.weather[0].main}}</p>
+            </div>
+
+            <p class="max-min-temperature">{{localWeather.main.temp_max | number: '1.0-1'}}º / {{localWeather.main.temp_min | number: '1.0-1'}}º</p>
+
+        </div>
+
+        <div>
+            <p class="temperature">{{localWeather.main.temp | number: '1.0-1'}}º</p>
+        </div>
+    </div>
+
+</div>
+
+<div *ngIf="showAlertMessage" class="weather-card">
+    <h1>In order to use the app you need to enable geolocation</h1>
+</div>

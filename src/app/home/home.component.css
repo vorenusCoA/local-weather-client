@@ -1,0 +1,50 @@
+.weather-card {
+    background-color: aliceblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0px 10px;
+    border: 1px solid black;
+    box-shadow: -5px 5px 5px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.inner-container {
+    display: flex;
+    align-items: center;
+}
+
+.temperature {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.max-min-temperature {
+    text-align: center;
+    margin: 0px;
+}
+
+.weather-main {
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+}
