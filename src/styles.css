@@ -1,4 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: lightseagreen;}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    animation: colorchange 120s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: lightseagreen;
+    }
+
+    20% {
+        background-color: chocolate;
+    }
+
+    40% {
+        background-color: deepskyblue;
+    }
+
+    60% {
+        background-color: darkorange;
+    }
+
+    80% {
+        background-color: gold;
+    }
+
+    100% {
+        background-color: maroon;
+    }
+}
